@@ -1,0 +1,56 @@
+@import '../main';
+
+.container {
+  background-color: $color-black;
+  color: $color-white;
+  padding: 01rem 2rem;
+  width: 100%;
+  position: fixed;
+  transition: all 0.3s ease-out;
+
+  @include md {
+    padding-top: 1.8rem;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-left {
+      position: relative;
+    }
+
+    &-right {
+      ul {
+        display: flex;
+        align-items: center;
+        li {
+          &:not(:last-child) {
+            margin-right: 1rem;
+          }
+        }
+      }
+
+      &-button {
+        display: none;
+        @extend %button-rounded;
+        border-color: $color-white;
+        &:hover {
+          color: $color-black;
+        }
+
+        @include md {
+          display: block;
+        }
+      }
+    }
+
+    &-logo {
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      line-height: normal;
+    }
+  }
+}

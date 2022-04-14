@@ -1,0 +1,34 @@
+%button-rounded {
+  border: 2px solid;
+  padding: 0.4rem 1.4rem;
+  border-radius: 1.4rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  z-index: 100;
+  position: relative;
+  overflow: hidden;
+  border-spacing: 0;
+  background-color: black;
+
+  &::before {
+    position: absolute;
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: -300;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform: scaleX(0);
+  }
+
+  &:hover {
+    &::before {
+      transform: scaleX(1);
+    }
+  }
+}
