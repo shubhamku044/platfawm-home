@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import styles from '../../styles/layout/Header.module.scss'
+import { GlobeIcon, MenuAlt3Icon } from '@heroicons/react/outline'
 
 const Header = () => {
   const [position, setPosition] = useState(window.pageYOffset)
@@ -31,16 +32,20 @@ const Header = () => {
           <ul>
             <li>
               <button className={`${styles['container__header-right-button']}`}>
-                Button &rarr;
+                Our Portfolio &rarr;
               </button>
             </li>
             <li>
               <button className={`${styles['container__header-right-button']}`}>
-                Button &rarr;
+                Start a Project &rarr;
               </button>
             </li>
-            <li>world</li>
-            <li>Hambuger</li>
+            <li className={`${styles['container__header-right-globe']}`}>
+              <GlobeIcon className="h-8 w-8 cursor-pointer" />
+            </li>
+            <li>
+              <MenuAlt3Icon className="h-8 w-8 cursor-pointer" />
+            </li>
           </ul>
         </div>
       </div>
