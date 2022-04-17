@@ -16,7 +16,9 @@ const Footer = () => {
             <div
               className={styles['container__right-head-widget-animate']}
             ></div>
-            <div className={styles['container__right-head-widget-links']}>
+            <div
+              className={`${styles['container__right-head-widget-links']} ${styles['container__right-head-widget-links-left']}`}
+            >
               <ul>
                 <li>
                   <Link href={'#'}>
@@ -41,7 +43,9 @@ const Footer = () => {
             <div
               className={styles['container__right-head-widget-animate']}
             ></div>
-            <div className={styles['container__right-head-widget-links']}>
+            <div
+              className={`${styles['container__right-head-widget-links']} ${styles['container__right-head-widget-links-right']}`}
+            >
               <ul>
                 <li>
                   <Link href={'#'}>

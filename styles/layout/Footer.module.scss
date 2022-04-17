@@ -70,6 +70,10 @@
     flex-direction: column;
     padding: 5rem 2.2rem;
 
+    & > *:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
     &-head {
       display: flex;
       flex-direction: column;
@@ -111,14 +115,69 @@
 
         &-links {
           margin-top: 2rem;
+          & > *:not(:last-child) {
+            margin-bottom: 0.8rem;
+          }
+
+          ul {
+            color: $color-text-light-gray;
+
+            & > *:not(:last-child) {
+              margin-bottom: 0.8rem;
+            }
+          }
+
+          &-left {
+            ul {
+              li {
+                a {
+                  &:hover {
+                    color: $color-white;
+                    transition: all 0.3s ease-out;
+                  }
+                }
+              }
+            }
+          }
+
+          &-right {
+            ul {
+              li {
+                a {
+                  &:hover {
+                    color: $color-text-blue;
+                    transition: all 0.3s ease-out;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &-contacts {
+          a {
+            &:hover {
+              color: purple;
+              transition: all 0.3s ease-out;
+            }
+          }
         }
 
         &-socials {
+          font-size: 1.2rem;
+          font-weight: 800;
+
+          & > *:not(:last-child) {
+            margin-right: 0.8rem;
+          }
         }
       }
     }
 
     &-footer {
+      font-size: 0.9rem;
+      color: $color-text-light-gray;
+      line-height: 1.4rem;
     }
   }
 }
