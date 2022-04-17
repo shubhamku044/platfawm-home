@@ -7,6 +7,7 @@
   width: 100%;
   position: fixed;
   transition: all 0.3s ease-out;
+  z-index: 1000;
 
   @include md {
     padding-top: 1.8rem;
@@ -16,6 +17,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 106rem;
+    margin: 0 auto;
 
     &-left {
       position: relative;
@@ -46,11 +49,11 @@
       }
     }
 
-    &-logo {
-      font-size: 1.6rem;
-      font-weight: 600;
-      letter-spacing: 1.2px;
+    &-logo_container {
+      position: relative;
       line-height: normal;
+      height: 3rem;
+      width: 12rem;
     }
   }
 }

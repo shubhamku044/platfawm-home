@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import styles from '../../styles/layout/Header.module.scss'
 import { GlobeIcon, MenuAlt3Icon } from '@heroicons/react/outline'
+import Image from 'next/image'
 
 const Header = () => {
   const [position, setPosition] = useState(window.pageYOffset)
@@ -26,7 +27,13 @@ const Header = () => {
     >
       <div className={styles.container__header}>
         <div className={styles['container__header-left']}>
-          <h1 className={styles['container__header-logo']}>Platfawm.</h1>
+          <h1 className={styles['container__header-logo_container']}>
+            <Image
+              src={'/platfawm_logo.svg'}
+              layout="fill"
+              objectFit="contain"
+            />
+          </h1>
         </div>
         <div className={styles['container__header-right']}>
           <ul>
