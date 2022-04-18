@@ -13,7 +13,9 @@ const OurClientsSection = () => {
   return (
     <div className={styles.container}>
       <div className={styles.container__heading}>
-        <h5>Our Clients</h5>
+        <h5>
+          Our <span>Clients</span>
+        </h5>
         <p>
           They are just some of those who have trusted our services. Project
           delivered, happy customer with quin cms.
