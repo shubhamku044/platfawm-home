@@ -19,7 +19,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 7.5rem 1.2rem;
+    padding: 4.6rem 1.2rem;
+
+    @include lg {
+      padding: 7.5rem 1.2rem;
+    }
 
     & > *:not(:last-child) {
       margin-bottom: 2rem;
@@ -50,16 +54,19 @@
       text-transform: uppercase;
       font-weight: 500;
       letter-spacing: 1.8px;
-      font-size: 0.9rem;
+      font-size: $font-sm;
     }
 
     &-p2 {
       text-transform: capitalize;
-      font-size: 4.6rem;
       font-weight: 600;
       letter-spacing: 1.6;
       text-align: center;
       max-width: 28rem;
+      font-size: $font-3xl;
+      @include sm {
+        font-size: $font-4xl;
+      }
     }
   }
 
@@ -68,7 +75,11 @@
     display: flex;
     background: $color-gray;
     flex-direction: column;
-    padding: 5rem 2.2rem;
+    padding: 3rem 2.2rem;
+
+    @include lg {
+      padding: 5rem 2.2rem;
+    }
 
     & > *:not(:last-child) {
       margin-bottom: 2rem;
@@ -146,19 +157,10 @@
                 a {
                   &:hover {
                     color: $color-text-blue;
-                    transition: all 0.3s ease-out;
+                    transition: all 0.2s ease-out;
                   }
                 }
               }
-            }
-          }
-        }
-
-        &-contacts {
-          a {
-            &:hover {
-              color: purple;
-              transition: all 0.3s ease-out;
             }
           }
         }
