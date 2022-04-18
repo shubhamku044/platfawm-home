@@ -49,12 +49,7 @@ const Footer = () => {
               <ul>
                 <li>
                   <Link href={'#'}>
-                    <a target="_blank">admin@example.com</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={'#'}>
-                    <a target="_blank">hr@example.con</a>
+                    <a target="_blank">contact@platfawm.com</a>
                   </Link>
                 </li>
               </ul>
@@ -74,8 +69,8 @@ const Footer = () => {
         </div>
         <div className={styles['container__right-footer']}>
           <p>
-            &#169; 2021. All rights reserved by Sweet-Themes. We are tracking
-            any intention of piracy.
+            &#169; 2022. All rights reserved by <span>Platfawm</span>. We are
+            tracking any intention of piracy.
           </p>
         </div>
       </div>
