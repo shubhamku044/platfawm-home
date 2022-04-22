@@ -8,7 +8,7 @@ const AboutLeft = () => {
       <div className={styles.container__img}>
         <div className={styles['container__img-left']}>
           <div className={styles['container__img-left-1']}>
-            <Image src={'/dummy.webp'} layout="fill" objectFit="cover" />
+            <Image src={'/dummy2.webp'} layout="fill" objectFit="cover" />
           </div>
         </div>
         <div className={styles['container__img-right']}>
@@ -16,7 +16,7 @@ const AboutLeft = () => {
             <Image src={'/dummy.webp'} layout="fill" objectFit="cover" />
           </div>
           <div className={styles['container__img-right-2']}>
-            <Image src={'/dummy.webp'} layout="fill" objectFit="cover" />
+            <Image src={'/dummy3.webp'} layout="fill" objectFit="cover" />
           </div>
         </div>
         <div className={styles.container__text}>
