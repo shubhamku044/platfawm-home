@@ -1,0 +1,135 @@
+@import '../../main';
+
+.container {
+  display: flex;
+  justify-content: center;
+  @include lg {
+    justify-content: start;
+  }
+
+  &__img {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &-left {
+      margin-right: 1.8rem;
+      &-1 {
+        position: relative;
+        height: 7rem;
+        width: 6rem;
+
+        @include sm {
+          height: 9rem;
+          width: 8rem;
+        }
+
+        @include md {
+          height: 11rem;
+          width: 10rem;
+        }
+
+        @include lg {
+          height: 8rem;
+          width: 7rem;
+        }
+
+        @include xl {
+          height: 13rem;
+          width: 12rem;
+        }
+
+        span {
+          border-radius: 1rem;
+        }
+      }
+    }
+
+    &-right {
+      & > *:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+      &-1 {
+        position: relative;
+        height: 11rem;
+        width: 13rem;
+
+        @include sm {
+          height: 13rem;
+          width: 15rem;
+        }
+
+        @include md {
+          height: 15rem;
+          width: 17rem;
+        }
+
+        @include lg {
+          height: 12rem;
+          width: 14rem;
+        }
+
+        @include xl {
+          height: 17rem;
+          width: 19rem;
+        }
+
+        span {
+          border-radius: 1rem;
+        }
+      }
+
+      &-2 {
+        position: relative;
+        height: 8rem;
+        width: 7rem;
+
+        @include sm {
+          height: 10rem;
+          width: 9rem;
+        }
+
+        @include md {
+          height: 12rem;
+          width: 11rem;
+        }
+
+        @include lg {
+          height: 9rem;
+          width: 8rem;
+        }
+
+        @include xl {
+          height: 10rem;
+          width: 9rem;
+        }
+
+        span {
+          border-radius: 1rem;
+        }
+      }
+    }
+  }
+
+  &__text {
+    position: absolute;
+    left: -1rem;
+    bottom: 2rem;
+
+    // @include lg {
+    //   bottom: 2rem;
+    // }
+
+    &-num {
+      font-size: $font-2xl;
+      font-weight: 800;
+      margin-left: 0.8rem;
+    }
+
+    &-para {
+      font-size: $font-sm;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

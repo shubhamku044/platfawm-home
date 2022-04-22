@@ -1,8 +1,8 @@
 @import '../../main';
 
 .container {
-  background: black;
-  color: white;
+  background: $color-black;
+  color: $color-white;
   padding: 4.2rem 2rem;
 
   & > *:not(:last-child) {
