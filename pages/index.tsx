@@ -21,6 +21,7 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <main style={{ minHeight: '100vh', paddingTop: '100px' }}>
+        <Home />
         <Help />
         <About />
         <FunFact />

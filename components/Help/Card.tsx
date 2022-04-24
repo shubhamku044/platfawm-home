@@ -1,3 +1,4 @@
+import { DeviceMobileIcon } from '@heroicons/react/outline'
 import styles from '../../styles/components/Help/Card.module.scss'
 
 const Card = () => {
@@ -5,6 +6,7 @@ const Card = () => {
     <div className={styles.container}>
       <div className={styles.container__parent}>
         <div className={styles['container__parent-inner']}>
+          <DeviceMobileIcon className="w-12 scale-150" />
           <div className={styles['container__parent-heading']}>
             <h4>SEO Solutions</h4>
           </div>
