@@ -7,6 +7,7 @@ import Help from '../components/Help/Help'
 import Footer from '../components/layout/Footer'
 import OurClientsSection from '../components/OurClients/OurClientsSection'
 import TypedSection from '../components/TypedSection'
+import PlatfawmHome from '../components/Home/PlatfawmHome'
 
 const Header = dynamic(() => import('../components/layout/Header'), {
   ssr: false,
@@ -21,7 +22,7 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <main style={{ minHeight: '100vh', paddingTop: '100px' }}>
-        <Home />
+        <PlatfawmHome />
         <Help />
         <About />
         <FunFact />
