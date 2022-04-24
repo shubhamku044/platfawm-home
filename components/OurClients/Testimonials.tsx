@@ -11,7 +11,7 @@ const Testimonials = () => {
   return (
     <div className={styles.container}>
       <Swiper
-        slidesPerView={window.innerWidth >= 768 ? 2 : 1}
+        slidesPerView={2}
         spaceBetween={50}
         centeredSlides={true}
         loop={true}
@@ -22,6 +22,27 @@ const Testimonials = () => {
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+          },
+
+          610: {
+            slidesPerView: 1.2,
+          },
+          768: {
+            slidesPerView: 1.3,
+          },
+          800: {
+            slidesPerView: 1.5,
+          },
+          968: {
+            slidesPerView: 1.8,
+          },
+          1024: {
+            slidesPerView: 2,
+          },
+        }}
       >
         {TestimonialData.map(({ id, personName, occupation, summary, img }) => {
           return (

@@ -22,8 +22,12 @@
 
     &-text {
       h5 {
-        font-size: $font-2xl;
+        font-size: $font-xl;
         font-weight: 800;
+
+        @include xs {
+          font-size: $font-2xl;
+        }
 
         @include sm {
           font-size: $font-3xl;
@@ -39,10 +43,14 @@
       }
 
       h6 {
-        font-size: $font-2xl;
+        font-size: $font-xl;
         font-weight: 800;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 1px;
+
+        @include xs {
+          font-size: $font-2xl;
+        }
 
         @include sm {
           font-size: $font-3xl;
