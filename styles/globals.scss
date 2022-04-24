@@ -151,3 +151,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.swiper-pagination-bullet {
+  border-radius: 1% !important;
+  width: 1.6rem !important;
+  height: 6px !important;
+  background-color: #888 !important;
+}

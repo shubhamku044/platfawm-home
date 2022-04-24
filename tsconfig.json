@@ -19,7 +19,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "components/OurClients/TestimonialData.js"
+    "components/OurClients/TestimonialData.js",
+    "components/Help/Carousel.jsx"
   ],
   "exclude": ["node_modules"]
 }

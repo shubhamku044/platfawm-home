@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import About from '../components/About/About'
 import FunFact from '../components/FunFact/FunFact'
+import Help from '../components/Help/Help'
 import Footer from '../components/layout/Footer'
 import OurClientsSection from '../components/OurClients/OurClientsSection'
 import TypedSection from '../components/TypedSection'
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <main style={{ minHeight: '100vh', paddingTop: '100px' }}>
+        <Help />
         <About />
         <FunFact />
         <OurClientsSection />
