@@ -5,6 +5,7 @@ import Image from 'next/image'
 
 const Header = () => {
   const [position, setPosition] = useState(window.pageYOffset)
+  const [open, setOpen] = useState(false)
 
   useEffect(() => {
     const handleControl = () => {
@@ -54,7 +55,16 @@ const Header = () => {
               <GlobeIcon className="h-8 w-8 cursor-pointer" />
             </li>
             <li>
-              <MenuAlt3Icon className="h-8 w-8 cursor-pointer" />
+              <div
+                className={`${styles.hamburger} ${
+                  open ? styles.hamburger__active : ''
+                }`}
+                onClick={() => setOpen(!open)}
+              >
+                <span className={styles.hamburger__line}></span>
+                <span className={styles.hamburger__line}></span>
+                <span className={styles.hamburger__line}></span>
+              </div>
             </li>
           </ul>
         </div>
