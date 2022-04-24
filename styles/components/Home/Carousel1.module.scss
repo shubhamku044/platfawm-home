@@ -1,0 +1,72 @@
+@import '../../main';
+
+.container {
+  height: 100vh;
+  background: url('/bg-1.webp') no-repeat fixed center;
+
+  &__home {
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 70rem;
+    padding: 0 3rem;
+
+    @include md {
+      margin: 0 auto;
+    }
+
+    @include lg {
+      padding: 0 4rem;
+    }
+
+    &-text {
+      h5 {
+        font-size: $font-2xl;
+        font-weight: 800;
+
+        @include sm {
+          font-size: $font-3xl;
+        }
+
+        @include md {
+          font-size: $font-4xl;
+        }
+
+        @include lg {
+          font-size: $font-6xl;
+        }
+      }
+
+      h6 {
+        font-size: $font-2xl;
+        font-weight: 800;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+
+        @include sm {
+          font-size: $font-3xl;
+        }
+
+        @include md {
+          font-size: $font-4xl;
+        }
+
+        @include lg {
+          font-size: $font-6xl;
+        }
+      }
+
+      div {
+        margin-top: 2rem;
+        max-width: 46rem;
+        p {
+          font-size: $font-sm;
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

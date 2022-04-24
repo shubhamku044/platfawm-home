@@ -21,8 +21,11 @@ const Header = () => {
         position >= 200
           ? {
               paddingTop: '.8rem',
+              backgroundColor: 'rgba(0, 0, 0, .9)',
             }
-          : {}
+          : {
+              backgroundColor: 'rgba(0, 0, 0, .86)',
+            }
       }
     >
       <div className={styles.container__header}>

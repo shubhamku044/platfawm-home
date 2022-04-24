@@ -21,7 +21,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main style={{ minHeight: '100vh', paddingTop: '100px' }}>
+      <main style={{ minHeight: '100vh', paddingTop: '2rem' }}>
         <PlatfawmHome />
         <Help />
         <About />

@@ -30,12 +30,12 @@ const Carousel = () => {
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
-        className="mySwiper"
+        modules={[Pagination, Autoplay]}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
         }}
+        className="mySwiper"
         ref={sliderRef}
         breakpoints={{
           320: {
