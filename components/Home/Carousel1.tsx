@@ -25,8 +25,8 @@ const Carousel1 = () => {
                   words={['Social Media?', 'Print Design?', 'Web Design?']}
                 />
               </span>{' '}
-              Quin is a <span>creative agency</span> built with one purpose: to
-              help you <span>define your brand.</span> We offer impeccable
+              Platfawm is a <span>creative agency</span> built with one purpose:
+              to help you <span>define your brand.</span> We offer impeccable
               service combining a nice and user-friendly design with{' '}
               <span>quality programming.</span>
             </p>

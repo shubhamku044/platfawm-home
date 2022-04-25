@@ -18,7 +18,7 @@ const OurClientsSection = () => {
         </h5>
         <p>
           They are just some of those who have trusted our services. Project
-          delivered, happy customer with quin cms.
+          delivered, happy customer with Platfawm.
         </p>
       </div>
       <Testimonials />

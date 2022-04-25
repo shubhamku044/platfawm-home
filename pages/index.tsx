@@ -17,7 +17,7 @@ const Home: NextPage = () => {
   return (
     <div className="relative">
       <Head>
-        <title>Platfawm Home</title>
+        <title>Platfawm</title>
         <link rel="icon" href="/platfawmFavicon.ico" />
       </Head>
       <Header />

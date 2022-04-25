@@ -34,7 +34,9 @@ const PlatfawmHome = () => {
           <Carousel2 />
         </SwiperSlide>
       </Swiper>
-      <Socials />
+      <div className={styles.container__socials}>
+        <Socials />
+      </div>
     </div>
   )
 }

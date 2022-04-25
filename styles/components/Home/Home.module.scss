@@ -2,4 +2,11 @@
 
 .container {
   position: relative;
+
+  &__socials {
+    position: absolute;
+    z-index: 1;
+    left: 3rem;
+    bottom: 2rem;
+  }
 }

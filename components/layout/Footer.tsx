@@ -1,5 +1,6 @@
 import styles from '../../styles/layout/Footer.module.scss'
 import Link from 'next/link'
+import Socials from '../Home/Socials'
 
 const Footer = () => {
   return (
@@ -53,16 +54,8 @@ const Footer = () => {
                   </Link>
                 </li>
               </ul>
-              <div className={styles['container__right-head-widget-socials']}>
-                <Link href={'#'}>
-                  <a target={'_blank'}>f</a>
-                </Link>
-                <Link href={'#'}>
-                  <a target={'_blank'}>t</a>
-                </Link>
-                <Link href={'#'}>
-                  <a target={'_blank'}>b</a>
-                </Link>
+              <div>
+                <Socials />
               </div>
             </div>
           </div>

@@ -8,7 +8,7 @@ const Socials = () => {
     <div className={styles.container}>
       <ul>
         <li>
-          <Link href={'#'}>
+          <Link href={'https://facebook.com/platfawm'}>
             <a target={'_blank'}>
               <div>
                 <Image
@@ -21,7 +21,7 @@ const Socials = () => {
           </Link>
         </li>
         <li>
-          <Link href={'#'}>
+          <Link href={'https://twitter.com/platfawm'}>
             <a target={'_blank'}>
               <div>
                 <Image
@@ -34,7 +34,7 @@ const Socials = () => {
           </Link>
         </li>
         <li>
-          <Link href={'#'}>
+          <Link href={'https://instagram.com/platfawm'}>
             <a target={'_blank'}>
               <div>
                 <Image
@@ -46,7 +46,7 @@ const Socials = () => {
             </a>
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link href={'#'}>
             <a target={'_blank'}>
               <div>
@@ -58,7 +58,7 @@ const Socials = () => {
               </div>
             </a>
           </Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   )
