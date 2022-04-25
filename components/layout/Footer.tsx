@@ -69,8 +69,7 @@ const Footer = () => {
         </div>
         <div className={styles['container__right-footer']}>
           <p>
-            &#169; 2022. All rights reserved by <span>Platfawm</span>. We are
-            tracking any intention of piracy.
+            &#169; 2022. All rights reserved by <span>Platfawm</span>.
           </p>
         </div>
       </div>

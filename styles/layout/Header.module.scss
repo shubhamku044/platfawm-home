@@ -49,10 +49,24 @@
     }
 
     &-logo_container {
-      position: relative;
-      line-height: normal;
-      height: 3rem;
-      width: 12rem;
+      display: flex;
+      align-items: center;
+
+      & > *:not(:last-child) {
+        margin-right: 0.8rem;
+      }
+
+      div {
+        position: relative;
+        height: 2.2rem;
+        width: 2.6rem;
+      }
+
+      span {
+        letter-spacing: 1.1px;
+        font-weight: 600;
+        font-size: $font-2xl;
+      }
     }
   }
 }

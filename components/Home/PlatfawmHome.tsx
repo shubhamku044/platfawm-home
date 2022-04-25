@@ -10,10 +10,11 @@ import 'swiper/css/navigation'
 import { EffectFade, Navigation, Autoplay } from 'swiper'
 import Carousel1 from './Carousel1'
 import Carousel2 from './Carousel2'
+import Socials from './Socials'
 
 const PlatfawmHome = () => {
   return (
-    <div className="">
+    <div className={styles.container}>
       <Swiper
         spaceBetween={30}
         effect={'fade'}
@@ -33,6 +34,7 @@ const PlatfawmHome = () => {
           <Carousel2 />
         </SwiperSlide>
       </Swiper>
+      <Socials />
     </div>
   )
 }

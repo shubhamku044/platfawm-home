@@ -18,7 +18,7 @@ const Home: NextPage = () => {
     <div className="relative">
       <Head>
         <title>Platfawm Home</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/platfawmIcon.ico" />
       </Head>
       <Header />
       <main style={{ minHeight: '100vh', paddingTop: '2rem' }}>

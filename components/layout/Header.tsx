@@ -32,11 +32,14 @@ const Header = () => {
       <div className={styles.container__header}>
         <div className={styles['container__header-left']}>
           <h1 className={styles['container__header-logo_container']}>
-            <Image
-              src={'/platfawm_logo.svg'}
-              layout="fill"
-              objectFit="contain"
-            />
+            <div>
+              <Image
+                src={'/icons/PlatfawmIcon.svg'}
+                layout="fill"
+                objectFit="contain"
+              />
+            </div>
+            <span>Platfawm.</span>
           </h1>
         </div>
         <div className={styles['container__header-right']}>
