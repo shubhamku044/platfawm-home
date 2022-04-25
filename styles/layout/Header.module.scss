@@ -51,6 +51,7 @@
     &-logo_container {
       display: flex;
       align-items: center;
+      cursor: pointer;
 
       & > *:not(:last-child) {
         margin-right: 0.8rem;

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../../styles/components/Home/Socials.module.scss'
+import FbIcon from '../Icons/FbIcon'
 
 const Socials = () => {
   return (
